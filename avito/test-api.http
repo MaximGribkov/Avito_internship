@@ -1,0 +1,71 @@
+POST http://localhost:8080/balance/add
+Content-Type: application/json
+
+{}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+POST http://localhost:8080/balance/transfer
+Content-Type: application/json
+
+{}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+POST http://localhost:8080/reserve/make
+Content-Type: application/json
+
+{}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+POST http://localhost:8080/reserve/accept
+Content-Type: application/json
+
+{}
+
+> {%
+client.test("Request executed successfully", function() {
+  client.assert(response.status === 200, "Response status is not 200");
+});
+%}
+
+###
+
+GET http://localhost:8080/test
+Accept: application/json
+
+###
+GET http://localhost:8080/balance/get
+Accept: application/json
+
+###
+GET http://localhost:8080/balance/list
+Accept: application/json
+
+###
+GET http://localhost:8080/report
+Accept: application/json
+
+###
+
+GET http://localhost:8080/reserve/csv
+Accept: application/json
+
+###

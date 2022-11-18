@@ -1,0 +1,7 @@
+info:
+  contact: {}
+  description: service for avito internship
+  title: microservice balance
+  version: "1.0"
+paths: {}
+swagger: "2.0"
